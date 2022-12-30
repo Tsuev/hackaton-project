@@ -1,7 +1,7 @@
 <template>
   <div class="toggle__wrapper fixed bottom-0 left-0 w-full px-2">
     <label class="toggle flex relative">
-      <input v-model="active" type="checkbox" hidden>
+      <input v-model="active" @change="$emit('check', active)" type="checkbox" hidden>
       <div class="toggle__check"></div>
       <div class="toggle__item" :class="{ 'active': !active }">город</div>
       <div class="toggle__item" :class="{ 'active': active }">вне города</div>
@@ -13,6 +13,7 @@
 import { ref } from 'vue';
 
 const active = ref(false)
+
 </script>
 
 <style lang='scss' scoped>
