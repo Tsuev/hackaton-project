@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <span class="p-input-icon-right  w-full sticky mb-2" style="top: 5px">
+    <span class="p-input-icon-right w-full sticky mb-2" style="top: 5px; z-index: 200;">
       <i class="pi pi-search"></i>
       <InputText placeholder="Введите маршрут..." type="text" v-model="searchCarsRequest" class="p-1 w-full" />
     </span>

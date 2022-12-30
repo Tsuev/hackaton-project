@@ -17,7 +17,7 @@
         <div class="product__number product__info">Номер <span>{{ car.name }}</span></div>
         <div class="product__road-time product__info">Время поездки <span>{{ car.time }} минут</span> </div>
         <div class="product__amount product__info">Количество мест <span>{{ car.count_places }} мест</span> </div>
-        <div class="product__amount product__info">Цена <span>{{ car.price }} руб.</span> </div>
+        <div class="product__amount product__info">Цена <span class="bg-green-600">{{ car.price }} руб.</span> </div>
       </div>
     </div>
     <div class="product__btn" @click="$router.push('/')">Назад</div>
